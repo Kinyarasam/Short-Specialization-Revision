@@ -46,3 +46,13 @@ for row in cursor:
     print(row[0])
 cursor.close()
 db.close()
+
+print('='*20)
+print()
+
+
+hash_password = __import__('encrypt_password').hash_password
+
+password = "MyAmazingPassw0rd"
+print(hash_password(password))
+print(hash_password(password))
