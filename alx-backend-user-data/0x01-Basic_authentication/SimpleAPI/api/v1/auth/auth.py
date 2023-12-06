@@ -11,15 +11,24 @@ class Auth:
         if path is None or not isinstance(excluded_paths, list) or len(excluded_paths) < 1:
             return True
 
+        ismatching = True
+
         for p in excluded_paths:
             match = re.match(path, p)
-            if not match:
-                return True
+            if match:
+                ismatching = False
 
-        return False
+        return ismatching
 
     def authorization_header(self, request=None) -> str:
-        return request
+        if request is None:
+            return None
+
+        header = request.headers.get('Authorization')
+        if header is None:
+            return None
+
+        return header
 
     def current_user(self, request=None) -> TypeVar('User'):
-        return request
+        return None
