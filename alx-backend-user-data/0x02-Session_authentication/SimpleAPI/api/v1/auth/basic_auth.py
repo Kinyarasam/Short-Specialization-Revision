@@ -54,7 +54,7 @@ class BasicAuth(Auth):
         email = record[0]
         passwd = delimeter.join(record[1:])
 
-        return tuple(email, passwd)
+        return email, passwd
 
     def user_object_from_credentials(self, user_email: str, user_pwd: str) -> TypeVar('User'):
         if user_email is None or not isinstance(user_email, str):
