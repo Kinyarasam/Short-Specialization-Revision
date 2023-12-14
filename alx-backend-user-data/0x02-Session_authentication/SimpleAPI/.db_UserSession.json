@@ -1,0 +1,16 @@
+{
+    "9cecee10-357a-4512-942f-04c17553d56b": {
+        "id": "9cecee10-357a-4512-942f-04c17553d56b",
+        "created_at": "2023-12-14T12:29:04",
+        "updated_at": "2023-12-14T12:29:04",
+        "user_id": "c99070ec-467f-4ad9-9a92-d0c5c52f05a0",
+        "session_id": "92488cf2-daa6-49f8-8820-35da50277546"
+    },
+    "a26e7611-5aa1-4de1-bdf7-e72dc1067bcf": {
+        "id": "a26e7611-5aa1-4de1-bdf7-e72dc1067bcf",
+        "created_at": "2023-12-14T12:29:19",
+        "updated_at": "2023-12-14T12:29:19",
+        "user_id": "c99070ec-467f-4ad9-9a92-d0c5c52f05a0",
+        "session_id": "4218ec5a-a700-4e3a-bae5-d7c91e9a4440"
+    }
+}
